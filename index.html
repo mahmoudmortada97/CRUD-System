@@ -15,12 +15,7 @@
         <h1 class="text-center mb-5">Product Managment System</h1>
         <div class="form-group mb-3">
           <label for="product-name" class="mb-2">Product Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="product-name"
-            onkeyup="productNameValidation()"
-          />
+          <input type="text" class="form-control" id="product-name" />
           <p class="text-danger d-none" id="product-name-error">
             Enter Valid Name, [4-9] characters Starts with captital letter.
           </p>
@@ -39,45 +34,27 @@
         </div>
         <div class="form-group mb-3">
           <label for="product-cat" class="mb-2">Product Category</label>
-          <input
-            type="text"
-            class="form-control"
-            id="product-cat"
-            onkeyup="productCatValidation()"
-          />
+          <input type="text" class="form-control" id="product-cat" />
           <p class="text-danger d-none" id="product-cat-error">
             Enter Valid Category, (TV | Mobile | Watch)
           </p>
         </div>
         <div class="form-group mb-3">
           <label for="product-desc" class="mb-2">Product Description</label>
-          <textarea
-            name=""
-            id="product-desc"
-            class="form-control"
-            onkeyup="productDescValidation()"
-          ></textarea>
+          <textarea name="" id="product-desc" class="form-control"></textarea>
           <p class="text-danger d-none" id="product-desc-error">
             Max Character is 250
           </p>
         </div>
 
-        <button id="addProductBtn" onclick="addProduct()" class="btn btn-info">
-          Add Product
-        </button>
+        <button id="addProductBtn" class="btn btn-info">Add Product</button>
         <button id="updateProductBtn" class="btn btn-success d-none">
           Update Product
         </button>
 
         <div class="form-group mb-3">
           <label for="search" class="my-4 fs-3">Search</label>
-          <input
-            oninput="searchProducts(this.value)"
-            type="text"
-            name="search"
-            id="search"
-            class="form-control"
-          />
+          <input type="text" name="search" id="search" class="form-control" />
         </div>
 
         <table class="table mt-4 text-center">
