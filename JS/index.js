@@ -84,6 +84,7 @@ function deleteProduct(targtedForDeleteProduct) {
     }
     displayProduct(productsNotDeletedList);
     setProductsinLocalStorage(productsNotDeletedList);
+    searchProducts.value = "";
   }
 }
 function setProductToBeDeleted(targtedForUpdateProduct) {
@@ -91,6 +92,7 @@ function setProductToBeDeleted(targtedForUpdateProduct) {
   addProductBtn.classList.add("d-none");
   updateProductBtn.classList.replace("d-none", "d-block");
   productToBeUpdated = targtedForUpdateProduct;
+  searchProducts.value = "";
 }
 
 updateProductBtn.addEventListener("click", updateProduct);
